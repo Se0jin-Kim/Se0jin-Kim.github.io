@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Jon Barron</title>
+    <title>Kim Seojin</title>
 
-    <meta name="author" content="Jon Barron">
+    <meta name="author" content="Kim Seojin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -16,32 +16,185 @@
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="profile-table"><tbody>
             <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Jon Barron
+              <td class="profile-details">
+                <p class="name">
+                  Kim Seojin
                 </p>
-                <p>
-		I'm a principal research scientist at <a href="https://deepmind.google/">Google DeepMind</a> in San Francisco, where I lead a small team that mostly works on <a href="https://www.matthewtancik.com/nerf">NeRF</a>.
-		At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">VR</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, <a href="https://blog.google/products/maps/three-maps-updates-io-2022/">Maps</a>, and <a href="https://research.google/blog/bringing-3d-shoppable-products-online-with-generative-ai/">Shopping</a>.
-		I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>.
-		I've received the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
+                <p class="profile-introduction">
+                  I am an undergraduate student at Yonsei University and an undergraduate researcher at the <a href="https://sites.google.com/site/hgjeoncv/home?authuser=0">Visual AI Lab</a>, where I work with Prof. Hae-Gon Jeon. My current research focuses on vision-language-action (VLA) models and world models for robotics. I am also interested in 3D vision and depth estimation.
                 </p>
-                <p style="text-align:center">
-                  <a href="mailto:jonbarron@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jonbarron/">Github</a>
+                <p class="profile-links">
+                  <a href="mailto:dattol1136@yonsei.ac.kr">Email</a> &nbsp;/&nbsp;
+                  <a href="data/KIMSEOJIN_CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/Se0jin-Kim">GitHub</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/ksj0209/">LinkedIn</a>
                 </p>
               </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/JonBarron.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/JonBarron.jpg" class="hoverZoomLink"></a>
+              <td class="profile-photo">
+                <a href="images/KimSeojin.jpg"><img src="images/KimSeojin.jpg" alt="Kim Seojin" width="170" height="220" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
+          <section class="news-section" id="news" aria-labelledby="news-heading">
+            <h2 id="news-heading">News</h2>
+            <!--
+              Add real news to this list in descending date order (newest first).
+              Copy the inert template below for each item. Display YYYY.MM in
+              the time element and set its datetime attribute to YYYY-MM.
+              Put the English news sentence in .news-content; link relevant
+              words within that sentence only when a related URL is provided.
+            -->
+            <ul class="news-list">
+              <li class="news-item">
+                <time class="news-date" datetime="2025-09">2025.09</time>
+                <span class="news-content">Joined the Visual AI Lab as an undergraduate researcher.</span>
+              </li>
+            </ul>
+            <template id="news-item-template">
+              <li class="news-item">
+                <time class="news-date"></time>
+                <span class="news-content"></span>
+              </li>
+            </template>
+          </section>
+          <section class="projects-section" id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <div class="project-list">
+              <article class="project-item" aria-labelledby="home-chef-title">
+                <a class="project-media" href="images/projects/home-chef.png" target="_blank" rel="noopener noreferrer" aria-label="View the Home Chef image at full size">
+                  <img src="images/projects/home-chef.png" alt="Home Chef project overview" width="1280" height="720" loading="lazy" decoding="async">
+                </a>
+                <div class="project-content">
+                  <h3 class="project-title papertitle" id="home-chef-title">Home Chef: Ingredient-Based Recipe Recommendation</h3>
+                  <p class="project-category">YAI 14th Project</p>
+                  <p class="project-description">Developed an image-based recipe recommendation system that identifies ingredients from refrigerator images and suggests recipes based on available ingredients. The system combines YOLOv5-based ingredient detection, a knowledge graph built with Neo4j, and knowledge-augmented prompting with KAPING to generate personalized recipes using Llama 3.</p>
+                  <p class="project-links">
+                    <a href="https://github.com/HYUNAHKO/Recipe-Generation/tree/master" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                    <a href="https://huggingface.co/datasets/HYUNAHKO/ingredients_dataset" target="_blank" rel="noopener noreferrer">[Dataset]</a>
+                  </p>
+                </div>
+              </article>
+              <article class="project-item" aria-labelledby="imjordan-title">
+                <a class="project-media" href="images/projects/imjordan.gif" target="_blank" rel="noopener noreferrer" aria-label="View the ImJordan animation at full size">
+                  <img src="images/projects/imjordan.gif" alt="ImJordan project animation" width="256" height="256" loading="lazy" decoding="async">
+                </a>
+                <div class="project-content">
+                  <h3 class="project-title papertitle" id="imjordan-title">ImJordan: Video-Based Robot Imitation Learning</h3>
+                  <p class="project-category">YAI 15th Project</p>
+                  <p class="project-description">Explored video-based imitation learning for humanoid control, aiming to teach robots new movements from video demonstrations without manually collecting expert motion data. Implemented a NIL-inspired learning pipeline using MuJoCo and HumanoidBench, incorporating video-based similarity rewards and physics-based regularization.</p>
+                  <p class="project-links">
+                    <a href="https://github.com/gjaegal/VIL" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                  </p>
+                </div>
+              </article>
+              <article class="project-item" aria-labelledby="amrag-title">
+                <a class="project-media" href="images/projects/amrag.png" target="_blank" rel="noopener noreferrer" aria-label="View the AMRAG image at full size">
+                  <img src="images/projects/amrag.png" alt="AMRAG project overview" width="1422" height="676" loading="lazy" decoding="async">
+                </a>
+                <div class="project-content">
+                  <h3 class="project-title papertitle" id="amrag-title">AMRAG: Adaptive Multimodal RAG</h3>
+                  <p class="project-category">YAI 17th Project</p>
+                  <p class="project-description">Explored an adaptive multimodal retrieval-augmented generation framework designed to handle both image-centric and text-centric queries. The approach investigates context-aware dynamic weighting of image and text embeddings, along with cross-modal consistency verification to improve the relevance and reliability of retrieved information.</p>
+                  <p class="project-links">
+                    <a href="https://github.com/Se0jin-Kim/AMRAG-reranking" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                  </p>
+                </div>
+              </article>
+              <article class="project-item" aria-labelledby="less-is-more-title">
+                <a class="project-media" href="images/projects/b3hind.gif" target="_blank" rel="noopener noreferrer" aria-label="View the B3HIND animation at full size">
+                  <img src="images/projects/b3hind.gif" alt="B3HIND project animation" width="400" height="400" loading="lazy" decoding="async">
+                </a>
+                <div class="project-content">
+                  <h3 class="project-title papertitle" id="less-is-more-title">Less is More in 3D: 3D Reconstruction via Frame Selection and Token Merging</h3>
+                  <p class="project-category">Undergraduate Capstone Project &middot; B3HIND<br>Role: Team Lead</p>
+                  <p class="project-description">Developed a memory-efficient 3D reconstruction pipeline based on LiteVGGT by combining frame selection and adaptive token merging. The approach integrates Sobel-based information map frame selection, quadtree-bipartite token merging, depth boundary priors, and adaptive cache scheduling to reduce redundant visual information and improve scalability under limited GPU memory.</p>
+                  <p class="project-links">
+                    <a href="https://github.com/B3HINDlitevggt" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="resume-section" id="experience" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Experience</h2>
+            <div class="entry-list">
+              <article class="resume-entry" aria-labelledby="stellago-title">
+                <p class="resume-date"><time datetime="2025-03">Mar 2025</time> &ndash; <time datetime="2025-12">Dec 2025</time></p>
+                <div class="resume-content">
+                  <h3 class="resume-title papertitle" id="stellago-title">StellaGo</h3>
+                  <p class="resume-meta">AI Engineer &middot; Data Processing</p>
+                  <p class="resume-description">Contributed to an AI-powered accessibility platform designed for wheelchair users. Responsible for AI engineering and data processing, with a focus on developing a map to support accessible navigation for wheelchair users.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="resume-section" id="honors-awards" aria-labelledby="honors-awards-heading">
+            <h2 id="honors-awards-heading">Honors &amp; Awards</h2>
+            <div class="entry-list">
+              <article class="resume-entry" aria-labelledby="ihei-award-title">
+                <p class="resume-date"><time datetime="2025-08">Aug 2025</time></p>
+                <div class="resume-content">
+                  <h3 class="resume-title papertitle" id="ihei-award-title">Grand Prize (1st Place): 2025 First Half IHEI Festa (Social Value Category)</h3>
+                  <p class="resume-meta">Institute for Higher Education Innovation (IHEI), Yonsei University</p>
+                  <p class="resume-description">Received the Grand Prize for StellaGo, an AI-powered accessibility platform for wheelchair users, recognizing its technical innovation and social impact.</p>
+                </div>
+              </article>
+              <article class="resume-entry" aria-labelledby="impact-award-title">
+                <p class="resume-date"><time datetime="2025-08">Aug 2025</time></p>
+                <div class="resume-content">
+                  <h3 class="resume-title papertitle" id="impact-award-title">Impact Foundation Award</h3>
+                  <p class="resume-meta">Impact Foundation</p>
+                  <p class="resume-description">Recognized for the social impact potential of an AI-powered accessibility platform through the Y-Compass Student Entrepreneurship program.</p>
+                </div>
+              </article>
+              <article class="resume-entry" aria-labelledby="innovative-tech-award-title">
+                <p class="resume-date"><time datetime="2025-06">Jun 2025</time></p>
+                <div class="resume-content">
+                  <h3 class="resume-title papertitle" id="innovative-tech-award-title">Innovative Tech Award</h3>
+                  <p class="resume-meta">Kakao Impact Foundation</p>
+                  <p class="resume-description">Recognized for developing an innovative technology solution addressing accessibility challenges through the Tech for Impact Campus program, hosted by Kakao Impact Foundation and Yonsei University.</p>
+                </div>
+              </article>
+              <article class="resume-entry" aria-labelledby="scholarship-title">
+                <!-- Replace this inert template with a date paragraph only after the scholarship period is confirmed. -->
+                <template id="scholarship-period-template">
+                  <p class="resume-date"></p>
+                </template>
+                <div class="resume-content">
+                  <h3 class="resume-title papertitle" id="scholarship-title">Scholarship Recipient</h3>
+                  <p class="resume-meta" lang="ko">이공 우수인재 성장경로 지원 시범사업 장학금</p>
+                  <p class="resume-description">Recipient of the Pilot Program for Supporting Career Development of Outstanding Science and Engineering Talent.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="resume-section" id="education" aria-labelledby="education-heading">
+            <h2 id="education-heading">Education</h2>
+            <div class="entry-list">
+              <article class="education-entry" aria-labelledby="yonsei-education-title">
+                <img class="education-symbol" src="images/yonsei-symbol.jpg" alt="Yonsei University symbol" width="1907" height="2268" decoding="async">
+                <div class="education-content">
+                  <h3 class="resume-title papertitle" id="yonsei-education-title">Yonsei University</h3>
+                  <p class="resume-meta">B.S. in Artificial Intelligence</p>
+                  <p class="resume-date"><time datetime="2023-03">Mar 2023</time> &ndash; <time datetime="2027-02">Feb 2027</time> (Expected)</p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="resume-section" id="activities-leadership" aria-labelledby="activities-leadership-heading">
+            <h2 id="activities-leadership-heading">Activities &amp; Leadership</h2>
+            <ul class="activities-list">
+              <li class="activity-item"><strong>Yonsei AI (YAI)</strong> &mdash; Member (14th&ndash;Present); Vice President (16th&ndash;17th)</li>
+              <li class="activity-item"><strong>YonKo AI Hackathon</strong> &mdash; Operations Lead (<time datetime="2026-06">Jun</time>&ndash;<time datetime="2026-10">Oct 2026</time>)</li>
+              <li class="activity-item"><strong>AGENT:24 (YAI &times; OpenAI)</strong> &mdash; Staff (<time datetime="2026-03">Mar</time>&ndash;<time datetime="2026-08">Aug 2026</time>)</li>
+              <li class="activity-item"><strong>AI Department Student Council</strong> &mdash; Member (<time datetime="2023-03">Mar 2023</time>&ndash;<time datetime="2024-01">Jan 2024</time>); Finance Lead (<time datetime="2024-02">Feb</time>&ndash;<time datetime="2024-08">Aug 2024</time>)</li>
+              <li class="activity-item"><strong>College of Computing Student Council</strong> &mdash; Head of Education &amp; Career Development (<time datetime="2026-01">Jan</time>&ndash;<time datetime="2026-11">Nov 2026</time>)</li>
+            </ul>
+          </section>
+          <!-- Original research and publications are preserved here without rendering or loading their media. -->
+          <template id="publications-archive">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
@@ -4657,7 +4810,10 @@ for Topologically Varying Neural Radiance Fields</span>
 
           </tbody></table>
 
-          
+          </template>
+
+          <!-- Original miscellaneous content is preserved off-page; the visible sections above contain the supplied personal information. -->
+          <template id="miscellanea-archive">
 					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
             <tr>
               <td>
@@ -4746,6 +4902,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
             
           </tbody></table>
+          </template>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">

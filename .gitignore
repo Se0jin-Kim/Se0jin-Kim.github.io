@@ -1,0 +1,15 @@
+# Local operating system and editor files
+.DS_Store
+._*
+.idea/
+.vscode/
+
+# Local secrets and development environments
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+node_modules/
+*.log
