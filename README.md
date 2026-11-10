@@ -27,4 +27,10 @@ Open <http://127.0.0.1:8000/>.
 - `images/KimSeojin.jpg`, `images/yonsei-symbol.jpg`, and `images/projects/`: personal website images and project animations.
 - `data/KIMSEOJIN_CV.pdf`: linked CV.
 
-The original template's remaining source and assets are retained. Its original repository is available through the local `upstream` remote.
+## Retained template pages
+
+The standalone `mipnerf/`, `mipnerf360/`, `zipnerf/`, and `softmaxfix/` pages and their local dependencies remain intact. They are original template projects, separate from the personal homepage.
+
+Unused publication and miscellaneous content, hover scripts, and unreferenced root assets have been removed from the current homepage. The original source remains available in Git history and through the `upstream` remote.
+
+The homepage uses plain HTML/CSS and native GIF playback; no JavaScript build step or package installation is required. Keep personal assets referenced by `index.html`, and check dependencies of the retained pages before removing any other files.

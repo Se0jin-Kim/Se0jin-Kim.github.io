@@ -1,38 +1,6 @@
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
@@ -74,19 +42,20 @@ a:hover {
   text-decoration: none;
 }
 
-body,
+body {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 td,
 th,
 tr,
 p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-}
-
+a,
 strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 h2 {
@@ -94,11 +63,12 @@ h2 {
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+  line-height: 1.3;
 }
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -109,39 +79,7 @@ h2 {
   font-size: 32px;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
-.colored-box {
-    color: black;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
-}
-
-/* Keep profile styling separate from the research and publication sections. */
+/* Keep profile styling scoped to the profile table. */
 .profile-table {
   width: 100%;
   border: 0;
@@ -153,36 +91,37 @@ span.highlight {
 .profile-table .profile-details,
 .profile-table .profile-photo {
   box-sizing: border-box;
-  padding: 2.5%;
+  padding: 20px 16px;
   vertical-align: middle;
 }
 
 .profile-table .profile-details {
-  width: 63%;
+  width: auto;
+  text-align: left;
 }
 
 .profile-table .profile-photo {
-  width: 37%;
+  width: 202px;
   text-align: center;
 }
 
 .profile-table p {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .profile-table .name {
   padding-top: 0;
   line-height: 1.2;
-  text-align: center;
+  text-align: left;
 }
 
 .profile-table .profile-introduction {
-  margin: 14px 0 12px;
+  margin: 14px 0;
 }
 
 .profile-table .profile-links {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .profile-table .profile-photo img {
@@ -232,7 +171,7 @@ span.highlight {
 
 .news-list {
   list-style: none;
-  margin: 12px 0 0;
+  margin: 14px 0 0;
   padding: 0;
 }
 
@@ -245,7 +184,7 @@ span.highlight {
   grid-template-columns: 5em minmax(0, 1fr);
   column-gap: 12px;
   align-items: start;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .news-list .news-item + .news-item {
@@ -254,6 +193,7 @@ span.highlight {
 
 .news-list .news-date {
   color: #555;
+  font-size: 14px;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -265,7 +205,7 @@ span.highlight {
 
 .projects-section .project-list,
 .resume-section .entry-list {
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
 .projects-section .project-item {
@@ -275,7 +215,7 @@ span.highlight {
 }
 
 .projects-section .project-item + .project-item {
-  margin-top: 24px;
+  margin-top: 28px;
 }
 
 .projects-section .project-media {
@@ -284,7 +224,7 @@ span.highlight {
   align-items: center;
   justify-content: center;
   width: 180px;
-  height: 180px;
+  height: 150px;
   max-width: 100%;
 }
 
@@ -293,29 +233,35 @@ span.highlight {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 100%;
+  /* Keep wide diagrams at full width without oversized square animations. */
+  max-height: 150px;
   object-fit: contain;
 }
 
 .projects-section .project-content {
   flex: 1;
   min-width: 0;
-  line-height: 1.5;
+  line-height: 1.6;
   overflow-wrap: anywhere;
 }
 
 .projects-section .project-title {
   margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .projects-section .project-category {
   margin: 4px 0 0;
   color: #555;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .projects-section .project-description {
-  margin: 8px 0;
+  margin: 8px 0 10px;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .projects-section .project-links {
@@ -323,6 +269,7 @@ span.highlight {
   flex-wrap: wrap;
   gap: 4px 10px;
   margin: 0;
+  font-size: 14px;
 }
 
 .resume-section .resume-entry {
@@ -338,15 +285,15 @@ span.highlight {
 
 .resume-section .resume-date {
   margin: 0;
-  font-size: 13px;
+  font-size: 14px;
   font-variant-numeric: tabular-nums;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .resume-section .resume-content {
   grid-column: 2;
   min-width: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .resume-section .resume-title {
@@ -356,7 +303,7 @@ span.highlight {
 
 .resume-section .resume-meta {
   margin: 4px 0 0;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .resume-section .resume-description {
@@ -366,32 +313,50 @@ span.highlight {
 .resume-section .education-entry {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
 .resume-section .education-symbol {
   display: block;
   flex: none;
   width: auto;
-  height: 80px;
-  max-width: 80px;
+  height: 75px;
+  max-width: 75px;
   object-fit: contain;
 }
 
 .resume-section .education-content {
   min-width: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
+.resume-section .education-content .resume-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.resume-section .education-content .resume-meta,
 .resume-section .education-content .resume-date {
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 .resume-section .activities-list {
   list-style: none;
-  margin: 12px 0 0;
+  margin: 14px 0 0;
   padding: 0;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+.resume-section .activity-item {
+  /* Align wrapped lines inside each activity without adding visible bullets. */
+  padding-inline-start: 12px;
+  text-indent: -12px;
+  overflow-wrap: break-word;
+}
+
+.resume-section .activity-item time {
+  white-space: nowrap;
 }
 
 .resume-section .activity-item + .activity-item {
@@ -402,12 +367,13 @@ span.highlight {
   .projects-section .project-item {
     flex-direction: column;
     align-items: stretch;
-    gap: 12px;
+    gap: 18px;
   }
 
   .projects-section .project-media {
     flex: none;
     align-self: center;
+    height: auto;
   }
 
   .resume-section .resume-entry {
